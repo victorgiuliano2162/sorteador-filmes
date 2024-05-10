@@ -5,15 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "filmes")
 public class Filme {
+
 
     @Id
     @GeneratedValue
@@ -24,6 +25,7 @@ public class Filme {
     private String nome;
 
     @Getter @Setter
+    @Column(name = "quem_escolheu")
     private String quemEscolheu;
 
 
