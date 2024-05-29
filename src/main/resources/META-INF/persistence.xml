@@ -6,7 +6,7 @@
                      http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
     <persistence-unit name="sorteador-filmes">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>org.sorteador.entity.Filme</class>
+        <class>org.sorteador.entities.Filme</class>
 
         <properties>
             <!-- Dados da conexão com o banco -->
