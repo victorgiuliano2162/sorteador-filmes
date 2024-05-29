@@ -4,10 +4,9 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-import org.sorteador.entity.Filme;
+import org.sorteador.entities.Filme;
 
 import java.util.List;
-import java.util.Objects;
 
 public abstract class FilmeDto {
 

@@ -1,11 +1,11 @@
-package org.sorteador.entity;
+package org.sorteador.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Objects;
 
 
@@ -27,6 +27,11 @@ public class Filme {
     @Getter @Setter
     @Column(name = "quem_escolheu")
     private String quemEscolheu;
+
+    @ManyToOne
+    @Getter @Setter
+    @JoinColumn(name = "director_id")
+    private Director director;
 
 
     @Override

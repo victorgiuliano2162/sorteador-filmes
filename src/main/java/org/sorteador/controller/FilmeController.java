@@ -1,11 +1,9 @@
 package org.sorteador.controller;
 
-import org.sorteador.entity.Filme;
+import org.sorteador.entities.Filme;
 import org.sorteador.service.FilmeDto;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 public class FilmeController extends FilmeDto {
 
